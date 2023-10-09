@@ -1,0 +1,99 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Gill Sans", "Gill Sans MT", Calibri, "Trebuchet MS", sans-serif;
+}
+html,
+body {
+  width: 100%;
+  height: 100%;
+}
+:root {
+  --text: #ecfedd;
+  --prm: #3c7a05;
+  --sec: #78836d;
+  --acc: #58cb6d;
+}
+#main {
+  width: 100%;
+  height: 100%;
+  background-color: var(--sec);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#panel {
+  border-radius: 10px;
+  box-shadow: 3px 3px 14px rgba(0, 0, 0, 0.811);
+  width: 85%;
+  height: 85%;
+  background-color: rgba(215, 229, 211, 0.768);
+  overflow: hidden;
+}
+#ptop {
+  background-color: var(--acc);
+  width: 100%;
+  height: 10%;
+  /* height: 70px; */
+  display: flex;
+  justify-content: space-around;
+  margin: auto auto;
+  align-items: center;
+}
+.elem {
+  display: flex;
+  gap: 12px;
+  align-items: center;
+  color: rgb(17, 20, 15);
+}
+.elem h3{
+    color: white;
+    font-weight: 700;
+}
+.elem p {
+  font-weight: 700;
+  color: var(--prm);
+  padding: 4px 18px;
+  background-color: white;
+  border-radius: 5px;
+}
+#pbtm {
+  width: 100%;
+  min-height: 100%-10%;
+  background-color: white;
+ padding: 10px 12px;
+  display: flex;
+  gap: 15px;
+  flex-wrap: wrap;
+  /* margin: 0 auto; */
+}
+.bubble {
+    margin: 0 auto;
+  width: 40px;
+  height: 40px;
+  background-color: var(--acc);
+  border-radius: 50%;
+  box-shadow: 2px 2px 5px var(--prm);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 18px;
+  font-weight: 700;
+  transition: all 0.4s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+.bubble:hover{
+    scale: 1.09;
+    cursor: pointer;
+    background-color: #38d756;
+
+}
+.game{
+    font-size: 40px;
+    width: 100%;
+    height: 600px;
+    
+    text-align: center;
+    justify-content: center;
+}
